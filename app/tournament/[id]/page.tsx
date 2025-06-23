@@ -51,12 +51,12 @@ export default function TournamentDetailPage({ params }: { params: { id: string 
   ]
 
   const pointsTable = [
-    { rank: 1, team: "D-Famiersers", totalPoints: 0, kills: 0, placement: 0, matches: 0 },
-    { rank: 2, team: "S N A K S", totalPoints: 0, kills: 0, placement: 0, matches: 0 },
-    { rank: 3, team: "Thundi Hori", totalPoints: 0, kills: 0, placement: 0, matches: 0 },
-    { rank: 4, team: "The Sénior", totalPoints: 0, kills: 0, placement: 0, matches: 0 },
-    { rank: 5, team: "The DYNamic Duo", totalPoints: 0, kills: 0, placement: 0, matches: 0 },
-    { rank: 6, team: "Blind Rushers", totalPoints: 0, kills: 0, placement: 0, matches: 0 },
+    { rank: 1, team: "Blind Rushers", totalPoints: 2, kills: 0, placement: 0, matches: 1 },
+    { rank: 2, team: "S N A K S", totalPoints: 2, kills: 0, placement: 0, matches: 1},
+    { rank: 3, team: "Thandi Hori", totalPoints: 2, kills: 0, placement: 0, matches: 1},
+    { rank: 4, team: "The Sénior", totalPoints: 0, kills: 0, placement: 0, matches: 1 },
+    { rank: 5, team: "D-Famiersers", totalPoints: 0, kills: 0, placement: 0, matches: 1 },
+    { rank: 6, team: "The DYNamic Duo", totalPoints: 0, kills: 0, placement: 0, matches: 1 },
   ]
 
   const fixtures = [
