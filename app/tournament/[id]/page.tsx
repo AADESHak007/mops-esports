@@ -51,12 +51,12 @@ export default function TournamentDetailPage({ params }: { params: { id: string 
   ]
 
   const pointsTable = [
-    { rank: 1, team: "Blind Rushers", totalPoints: 8, kills: 119, placement: 0, matches: 4 },
-    { rank: 2, team: "S N A K S", totalPoints: 6, kills: 105, placement: 0, matches: 4},
-    { rank: 3, team: "Thandi Hori", totalPoints: 6, kills: 93, placement: 0, matches: 4},
-    { rank: 4, team: "The Sénior", totalPoints: 2, kills: 86, placement: 0, matches: 4 },
-    { rank: 5, team: "The DYNamic Duo", totalPoints: 2, kills: 73, placement: 0, matches: 4 },
-    { rank: 6, team: "D-Famiersers", totalPoints: 0, kills: 85, placement: 0, matches: 4 },
+    { rank: 1, team: "Blind Rushers", totalPoints: 10, kills: 159, placement: 0, matches: 5 },
+    { rank: 2, team: "S N A K S", totalPoints: 6, kills: 138, placement: 0, matches: 5},
+    { rank: 3, team: "Thandi Hori", totalPoints: 6, kills: 112, placement: 0, matches: 5},
+    { rank: 4, team: "The DYNamic Duo", totalPoints: 4, kills: 113, placement: 0, matches: 5 },
+    { rank: 5, team: "D-Famiersers", totalPoints: 2, kills: 122, placement: 0, matches: 5 },
+    { rank: 6, team: "The Sénior", totalPoints: 2, kills: 115, placement: 0, matches: 5 },
   ]
 
   const fixtures = [
@@ -89,18 +89,18 @@ export default function TournamentDetailPage({ params }: { params: { id: string 
 
   // Leaderboard data: player, team, finishes, assists
   const leaderboard = [
-    { player: "PZYKÉN", team: "D-Famiersers", finishes: 35, assists: 36 },
-    { player: "STEELX", team: "D-Famiersers", finishes: 50, assists: 23 },
-    { player: "PZYGÓD", team: "S N A K S", finishes: 50, assists: 25 },
-    { player: "DARk KING", team: "S N A K S", finishes: 55, assists: 31 },
-    { player: "Garmi Hori-1", team: "Thandi Hori", finishes: 58, assists: 20 },
-    { player: "Garmi Hori-2", team: "Thandi Hori", finishes: 35, assists: 31 },
-    { player: "HZÁKI", team: "The Sénior", finishes: 49, assists: 29 },
-    { player: "Capybara", team: "The Sénior", finishes: 37, assists: 30 },
-    { player: "DefinatelyTDM", team: "The DYNamic Duo", finishes: 28, assists: 25 },
-    { player: "Sherni", team: "The DYNamic Duo", finishes: 45, assists: 9 },
-    { player: "BR OXY", team: "Blind Rushers", finishes: 54, assists: 33 },
-    { player: "DEEPAK THAKUR", team: "Blind Rushers", finishes: 65, assists: 24 },
+    { player: "PZYKÉN", team: "D-Famiersers", finishes: 49, assists: 51 },
+    { player: "STEELX", team: "D-Famiersers", finishes: 73, assists: 31 },
+    { player: "PZYGÓD", team: "S N A K S", finishes: 65, assists: 36 },
+    { player: "DARk KING", team: "S N A K S", finishes: 73, assists: 43 },
+    { player: "Garmi Hori-1", team: "Thandi Hori", finishes: 69, assists: 26 },
+    { player: "Garmi Hori-2", team: "Thandi Hori", finishes: 43, assists: 37 },
+    { player: "HZÁKI", team: "The Sénior", finishes: 63, assists: 39 },
+    { player: "Capybara", team: "The Sénior", finishes: 52, assists: 41 },
+    { player: "DefinatelyTDM", team: "The DYNamic Duo", finishes: 47, assists: 36 },
+    { player: "Sherni", team: "The DYNamic Duo", finishes: 66, assists: 20 },
+    { player: "BR OXY", team: "Blind Rushers", finishes: 72, assists: 37 },
+    { player: "DEEPAK THAKUR", team: "Blind Rushers", finishes: 87, assists: 32 },
   ];
 
   // Sort leaderboard by finishes, then assists
