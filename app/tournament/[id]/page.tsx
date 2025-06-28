@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Trophy, Users, DollarSign, Calendar, MapPin, Clock, Target } from "lucide-react"
 import Image from "next/image"
+import Bracket from "@/components/Bracket"
 
 export default function TournamentDetailPage({ params }: { params: { id: string } }) {
   // Mock tournament data - in real app, fetch based on params.id
@@ -320,32 +321,7 @@ export default function TournamentDetailPage({ params }: { params: { id: string 
 
           {/* Fixtures Tab */}
           <TabsContent value="fixtures" className="mt-8">
-            <div className="space-y-6">
-              {fixtures.map((day, dayIndex) => (
-                <Card key={dayIndex} className="bg-slate-800/50 border-slate-700">
-                  <CardHeader>
-                    <CardTitle className="text-white">{day.day}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-3">
-                      {day.matches.map((match, matchIndex) => (
-                        <div
-                          key={matchIndex}
-                          className="flex items-center justify-between p-3 bg-slate-700/50 rounded-lg"
-                        >
-                          <div className="flex items-center gap-4">
-                            <div className="flex items-center gap-2">
-                              <Clock className="w-4 h-4 text-gray-400" />
-                              <span className="text-white font-medium">{match.match}</span>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <Bracket />
           </TabsContent>
 
           {/* Results Tab */}

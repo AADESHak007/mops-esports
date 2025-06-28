@@ -7,9 +7,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Search, Users, Trophy } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import Bracket from "@/components/Bracket"
 
 export default function TournamentsPage() {
-  const upcomingTournaments = [];
+  const upcomingTournaments: any[] = [];
 
   const liveTournaments = [
     {
@@ -26,9 +27,9 @@ export default function TournamentsPage() {
     },
   ];
 
-  const completedTournaments = [];
+  const completedTournaments: any[] = [];
 
-  const TournamentCard = ({ tournament, showWinner = false, showCurrentMatch = false }) => (
+  const TournamentCard: React.FC<{ tournament: any; showWinner?: boolean; showCurrentMatch?: boolean }> = ({ tournament, showWinner = false, showCurrentMatch = false }) => (
     <Card className="bg-slate-800/50 border-slate-700 hover:border-blue-500/50 transition-all duration-300 group">
       <div className="flex">
         <div className="relative w-32 h-24 flex-shrink-0">
